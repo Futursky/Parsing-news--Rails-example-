@@ -1,0 +1,25 @@
+<div id="new_list_wrap">	
+  <%= render 'index' %>
+</div>
+	
+<div id="pagination" > 
+  <div class="pag_mover">			
+<!-- optional left control buttons--> 					
+    <a class="control" id="max_backward"></a>				
+    <a class="control" id="over_backward"></a> 							
+    <div class='paginator_p_wrap'> 				
+      <div class='paginator_p_bloc'> 					
+<!--<div class='paginator_p'></div> // page number : dynamically added -->					
+      </div> 				
+    </div> 				
+<!-- optional right control buttons--> 
+    <a class="control" id="over_forward"></a>
+    <a class="control" id="max_forward"></a> 										
+<!-- slider --> 
+    <div class='paginator_slider' class='ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all'> 					
+      <a class='ui-slider-handle ui-state-default ui-corner-all' href='#'></a>					
+    </div>
+  </div>				
+</div>
+
+<div class="back" style="clear: both"><%= link_to 'Back', feeds_path %></div>

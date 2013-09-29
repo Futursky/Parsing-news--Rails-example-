@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Actions with DB:</h1></br>
+
+<h3>Backup DB</h3>
+	<%= link_to "Export feeds", {:action => :export_feeds} %></br>
+	<%= link_to "Export articles", {:action => :export_articles} %></br>
+	<%= link_to "Export plugins ", {:action => :export_plugins} %></br>
+
+<h3>Load DB</h3>
+
+<%= form_tag({ controller: "feeds", action: :import }, multipart: true) do %>
+  <%= file_field_tag :file_f %>
+  <%= submit_tag "Import feeds" %>
+<% end %></br>
+
+<%= form_tag({ controller: "articles", action: :import }, multipart: true) do %>
+  <%= file_field_tag :file_a %>
+  <%= submit_tag "Import articles" %>
+<% end %></br>
+
+<%= form_tag({ controller: "plugins", action: :import }, multipart: true) do %>
+  <%= file_field_tag :file_p %>
+  <%= submit_tag "Import plugins" %>
+<% end %></br>
+
+<%= link_to 'Back', admin_feeds_path %>

@@ -1,0 +1,49 @@
+$(function() {
+  $('#fileupload').fileupload({
+    dataType: 'json',
+
+    add: function (e, data) {
+      $('<br />').appendTo($('#uploadfileplace'));
+
+      data.context = $('<button/>').text('Upload')
+        .appendTo($('#uploadfileplace'))
+        .click(function () {
+          $('input, select, textarea').each(function(index){
+            $(this).prop('disabled', true);
+          });
+
+          $('#uploadfileplace br').remove();
+          $('#progress').css('display', 'block');
+          data.context = $('<p/>').text('Uploading...').replaceAll($(this));
+          data.submit();
+        });
+    },
+
+    done: function (e, data) {
+      $('input, select, textarea').each(function(){
+        $(this).prop('disabled', false);
+      });
+      data.context.text('Upload finished.');
+      $('#uploadfileplace p, #uploadfileplace br').remove();
+      $('#uploadfileplace').css('display', 'none');
+    },
+
+    progressall: function (e, data) {
+      var progress = parseInt(data.loaded / data.total * 100, 10);
+      $('#progress .bar').css(
+        'width',
+        progress + '%'
+      );
+    }
+  });
+});
+
+function otherPlugin(option) {
+  if (option == 'Other plugin') {
+  	$('#uploadfileplace').css('display', 'block');
+  	$('#progress').css('display', 'none');
+  }
+  else {
+  	$('#uploadfileplace').css('display', 'none');
+  }
+};

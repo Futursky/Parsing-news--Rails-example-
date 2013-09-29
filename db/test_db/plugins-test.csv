@@ -1,0 +1,8 @@
+Name,File_name,Path,File_size
+Youtube,Youtube.rb,app/controllers/admin/plugins/Youtube.rb,1402
+Reportazist,Reportazist.rb,app/controllers/admin/plugins/Reportazist.rb,1290
+Habr,Habr.rb,app/controllers/admin/plugins/Habr.rb,3462
+Bash,Bash.rb,app/controllers/admin/plugins/Bash.rb,838
+Newscread,Newscread.rb,app/controllers/admin/plugins/Newscread.rb,1498
+Bbc,Bbc.rb,app/controllers/admin/plugins/Bbc.rb,1144
+Reporter,Reporter.rb,app/controllers/admin/plugins/Reporter.rb,1627

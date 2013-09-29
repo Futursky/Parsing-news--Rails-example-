@@ -1,0 +1,39 @@
+
+        /* Composite box for Breadcrumbs and Search */
+		#wrapper { 
+			width: 100%;
+			float: left;
+			min-width: 300px;
+			margin-right: 10px;
+			border: 1px solid red;
+		} 
+         /* Breadcrumbs' Box */
+		#wrapper #bc_box {
+			float:left;
+			margin-left:-300px; /* The size of the fixed block. */
+			width:100%;
+			margin-right: 10px;
+			min-width: 620px;
+		}
+		 /* Breadcrumbs' Content */
+		#wrapper .breadcrumbs {
+			margin-left:310px; /* The size of the fixed block. */
+			background-color: yellow;
+			margin-left: 10px;
+			/*border-radius:10px;*/
+			word-wrap: break-word;  /* Allows long words to be able to break and wrap onto the next line. */  
+		}
+		/* Search */
+		#wrapper #search_box {
+			float:left;
+			width:300px;
+			height: 20px;
+			background-color: green;
+			 margin-left: 10px;
+			margin-right: 10px;	
+			/*border-radius:10px;*/
+		}
+		/* Makes the element drop below any floated elements*/
+		.clear {
+			clear: both;
+		}

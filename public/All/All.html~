@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link href="all.css" rel="stylesheet" type="text/css" />
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="script.js"></script>
+		<title>RiaFresh</title>
+	</head>
+	<body >
+		<div id="header_box">
+			<div class = "name_part">
+				<div>
+					 <ul class="dropDownThems">RiaFresh
+						<li>
+							<a href="#" class="redTheme" onfocus="this.blur()">RiaFresh
+								<img src = "logo.jpg" width="22px" height="22px"/>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="yellowTheme" onfocus="this.blur()">RiaFresh
+								<img src = "logo.jpg" width="20px" height="20px"/>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="blackTheme" onfocus="this.blur()">RiaFresh
+								<img src = "logo.jpg" width="20px" height="20px"/>
+							</a>
+						</li>
+       					 </ul>
+				</div>
+			</div>
+			<div class = "logo_part">
+				<img src = "logo.jpg"/>
+			</div>
+		</div>
+		 <div id="main">
+          		<div class="plase_holder">
+	       			<div class="breadcrumbs">
+					<ul class="breadcrumbs1">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Main Lavel</a></li>
+						<li><a href="#">Sub Lavel</a></li>
+						<li><a href="#">Sub sub Lavel</a></li>
+						<li>Your current page</li>
+					</ul>
+		   		    </div>
+	    		</div>
+			<div class="search_box">
+				<div class="label_part">
+					<label>Search:</label>
+				</div>
+				<div class="search_part">
+					<div>
+						<input class = "search" type="text" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div  class="stop"> </div>
+
+		<div id = "main-content_box">
+			<div class = "help-content_box">
+				<div class = "content_box">
+                    222 wwwwwwwwwwwwww wwwwwwwwwwwww wwwwwwwwwwwwwwwwwwwwwwwwwwwwwww dfsdf edfesdfesdf sfdsdfsdf sedfgfdsfgdsfg s sefgdsfgdsg efsdfg sdfgsdfg sfgsofpgo soifgpsodifspdo soedfghsdfhsodif sefghsdf fgfsdgfsdg sodfgsdogsdiog sdfghdsifghsdiofgh sidfgosdfgsdg sdfughsdfug sufhdgsdfogdsfg sdfugs sdfihgsdfihg sdfgiuhsdpfighspdifhg dspfiughsodifghspi dfhgisudhfipghdspigh psdifughsidfuhg sdifgh dspgu hpsdughpsdugfpdsiugh dsiuhg psdi hgis dh piu hszdiuh aspdugh spdugh psdfugh psiuodfgh psdughspdog hsduhgpsdioghspdghspdoguh spdiuogh psdgf usdfu sdpuh sduszduf hasdpfhu aspduhgpsadioughpsdugh dspfugh
+				</div>
+			</div>
+			<div class = "menu_box">
+                		<ul> 
+					<li><a href="#">Menu1</a></li>        
+					<li><a href="#">Menu2</a></li>
+					<li><a href="#">Menu3</a></li>
+					<li><a href="#">Menu4</a></li>
+					<li><a href="#">Menu5</a></li>
+					<li><a href="#">Menu6 Тест який не поміщається заміняється трьома крапками</a></li>
+				</ul>	 
+			</div>
+		</div>
+		<div class="stop1"> </div>
+		
+		<div id="footer_box">
+    		<div class="pool">
+        		<div class="mover">
+            		<div class="info">Copyright &copy; <a href="mailto:futurius@gmail.com/">Contact us</a> Version 1.0</div>
+        		</div>
+        
+        		<div class="validators">
+
+        			<a href="http://validator.w3.org/check?uri=referer" target="_blank">
+           				 <img src="http://www.w3.org/Icons/valid-html401.gif" alt="Valid HTML" height="30" width="88"/>
+        			</a> 
+			
+	   				 <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+    					<img src="http://www.w3.org/Icons/valid-css.gif" alt="Valid CSS" height="30" width="88"/>
+       				 </a>
+       			 </div>
+        	 </div>
+		</div>
+	</body>
+</html>
+

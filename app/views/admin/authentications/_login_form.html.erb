@@ -1,0 +1,48 @@
+<div id = "login_box" class="auth_box">
+	<h1>Authorization</hi>
+	<h3>
+		<%= form_tag( :controller=>"authentications", :action=>"login", :method => "post")  do %>
+			<table>
+				<% if @wrong_data %>
+					<tr>
+						<td colspan = 2 >
+							<div class="error_msg">Incorrect data!</div>
+						</td>
+					</tr>							
+				<%end%>
+				<tr>
+					<td>
+				    	<%= label_tag(:name, "Name:") %>
+					</td>
+					<td>
+						<%= text_field_tag(:name) %>
+					</td>
+				</tr>
+				<tr>
+				 	<td>
+				  		<%= label_tag(:password, "Password:") %>
+					</td>
+					<td>						
+				  		<%= password_field_tag(:password) %>
+				   	</td>
+				</tr>
+				<tr>
+					<td colspan = 2>
+						<% if session[:counter_wrong_login] > 3 %>
+							<label id= "recaptcha_lable">Human Test, please enter words: 
+								<%= recaptcha_tags :display => { :theme => "clean", :lang => "en" }%>
+							</label> 
+							<% if @wrong_recaptcha %>
+								<div class="recaptchaWrong">
+									Your written words doesn't match!!!
+									<div>Try again!</div>
+								</div>
+							<%end%>
+						<% end %>
+				  		<%= submit_tag("Login") %>
+					</td>
+				</tr>
+			</table>
+		<% end %>
+	</h3>			
+</div>

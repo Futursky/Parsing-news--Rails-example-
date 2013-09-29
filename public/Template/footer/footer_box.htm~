@@ -1,0 +1,27 @@
+<!DOCTYPE html">
+
+<html>
+
+<head>
+
+<title>footer</title>
+<link href = "footer_box.css" rel = "stylesheet" type = "text/css">
+
+</head>
+
+<body>
+
+	<div class="foot-info">Copyright &copy; <a href="mailto:futurius@gmail.com/">Contact us</a>Version 1.0</div>
+
+	<div class="foot-valid">
+		<a href="http://validator.w3.org/check?uri=referer" target="_blank">
+			<img src="http://www.w3.org/Icons/valid-html401.gif" alt="Valid HTML" height="31" width="88" />
+		</a> 
+		<a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+			<img src="http://www.w3.org/Icons/valid-css.gif" alt="Valid CSS" height="31" width="88" />
+		</a>
+	</div>
+
+</body>
+
+</html>

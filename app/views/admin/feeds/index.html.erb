@@ -1,0 +1,31 @@
+<h1>All feeds</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Url</th>
+    <th>Content</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @feeds.each do |feed| %>
+  <tr>
+    <td><%= feed.name %></td>
+    <td><%= feed.url %></td> 
+    <td><%= feed.content %></td>
+    <td><%= link_to 'Show', admin_feed_path(feed) %></td>
+    <td><%= link_to 'Edit', edit_admin_feed_path(feed) %></td>
+    <td><%= button_to 'Delete', admin_feed_path(feed), :method=>:delete, confirm: 'Are you sure?' %></td>
+  </tr>
+<% end %>
+</table>
+<br />
+<%= link_to 'New Feed', new_admin_feed_path %>
+<br />
+<% if !@feeds.empty? %>
+<%= link_to 'Download Articles', admin_load_articles_loadAction_path %>
+<% end %>
+<br />
+<%= link_to 'DB Backup/Restore', admin_csv_backup_index_path %>

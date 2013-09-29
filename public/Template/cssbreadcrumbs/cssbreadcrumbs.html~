@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style>
+
+body {
+	font:0.69em/1.13em "verdana", arial, tahoma, sans-serif; background:#fff;
+	margin: 0;
+	padding: 0;
+	}
+.breadcrumbs ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	
+	}		
+.breadcrumbs {
+	height: 20px;
+	/*border:1px solid #c9c9c9;*/
+	}
+.breadcrumbs li {
+	float:left;
+	line-height:20px;
+	color:#777;
+	padding-left:6px;
+	}		
+.breadcrumbs li a {
+	background: url(breadcrums.jpg) no-repeat right center;
+	display:block;
+	padding:0 15px 0 0;
+	}							
+.breadcrumbs li a:link,
+.breadcrumbs li a:visited {
+	color:#777;
+	text-decoration:none;
+	}	
+a:link, a:visited,	
+.breadcrumbs li a:hover,
+.breadcrumbs li a:focus {
+	color:#222
+	}		
+</style>
+</head>
+
+<body>
+<ul class="breadcrumbs">
+<li><a href="#">Home</a></li>
+<li><a href="#">Main Lavel</a></li>
+<li><a href="#">Sub Lavel</a></li>
+<li><a href="#">Sub sub Lavel</a></li>
+<li>Your Current page</li>
+</ul>
+</body>
+</html>

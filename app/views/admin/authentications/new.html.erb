@@ -1,0 +1,46 @@
+<div id="add_admin_box">
+	<h1>Add new admin</hi>
+		<h3>
+			<%= form_for :admin, :url => { :action => :add } do |f|%>
+				<table>
+					<tr>
+						<td>
+							<%= f.label :name, "Name:" %>
+						</td>
+						<td>
+						 	<%= f.text_field :name %>
+					  	</td>
+					</tr>
+					<tr>
+						<td>
+					  	    <%= f.label :password, "Password:" %>
+						</td>
+						<td>
+							<%= f.password_field :password %>
+					 	</td>
+					<tr>
+					 	<td>
+					        <%= f.label :password_confirmation, "Repeat password:" %>
+						</td>
+						<td>						
+					 		<%= password_field :admin, :password_confirmation %>
+						</td>
+					</tr>
+					<tr>
+						<td collspan = 2>
+						   <%= f.submit("Add") %>
+						</td>
+					</tr>
+				</table>
+				<% if @admin.errors.any? %>
+					  <div id="errorExplanation">Incorrect data:
+					     <ul>
+					    	<% @admin.errors.full_messages.each do |msg| %>
+					      		<li><%= msg %>!</li>
+					   		 <% end %>
+					    </ul>
+					  </div>
+				<% end %>
+			<% end %>
+		</h3>		
+</div>

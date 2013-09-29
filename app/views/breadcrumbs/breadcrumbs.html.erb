@@ -1,0 +1,10 @@
+<div class = "breadcrumbs">
+  <ul> 
+    <%=	def breadcrumbs
+      s =  [ link_to('Home', root_path) ]
+      s << link_to(@feed.name, feed_articles_path(@feed)) if @feed
+      s << link_to(@article.name, article_path(@feed, @article_path)) if @article
+      s.join(' > ')
+    end %>
+  </ul>	 
+</div>

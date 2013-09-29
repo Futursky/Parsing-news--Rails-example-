@@ -1,0 +1,34 @@
+#footer_box {
+    border: solid 1px red;
+    float: left;
+    min-width:300px;
+    padding: 10px;
+    margin: 10px 10px 0px 10px;
+    min-height: 50px;
+    width: 98%;
+}
+
+ #footer_box .place-holder {
+    float:left;
+    margin-left:-300px;
+    min-width: 600px;
+}
+
+#footer_box .foot_valid {
+    text-align: right; 
+    float:right;
+    width:300px;
+    background-color: green;
+}
+
+#footer_box .foot_info {
+    margin-left:300px;
+    word-wrap: break-word;
+    font-size: 30px;
+    float: left;
+ 
+}
+
+#footer_box .stop {
+    clear: both;
+}

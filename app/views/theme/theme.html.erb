@@ -1,0 +1,5 @@
+	<% @theme_files = Dir.glob("app/assets/stylesheets/Theme*.scss") %>
+	<% @theme_files.each do |theme| %>
+		<% theme = File.basename(theme,".css.scss") %>
+		<li><%= link_to theme, {:theme => theme}, :class => theme %></li>
+	<% end %>

@@ -1,0 +1,21 @@
+<h1>Listing articles</h1>
+<% @articles.each do |article| %>
+  <div id="wrap">
+  	<% if article.image=~URI::regexp %>
+       <div id="preview" style="background: url( <%= article.image %> ) 100% 100%;  background-size: cover;"></div>
+  	<% end %>
+    <h1><%= article.title %></h1>
+    <% if article.feed.name.to_s == 'BBC'  %>
+      <p><%= strip_tags(article.content.encode!('UTF-8', 'WINDOWS-1251')) %></p>
+    <% else %>
+      <p><%= strip_tags(article.content) %></p>
+    <% end  %>
+    <!--<p><%= article.url %></p>-->
+  </div>
+  </br>
+  <%= link_to 'Show', admin_feed_article_path(article.feed,article) %>
+  <%= button_to 'Delete', admin_feed_article_path(article.feed,article) , :method => :delete, confirm: 'Are you sure?' %>
+<% end %>
+<br />
+<%= link_to 'New Article', new_admin_feed_article_path %>
+<%= link_to 'Back', admin_feed_path(@feed) %>

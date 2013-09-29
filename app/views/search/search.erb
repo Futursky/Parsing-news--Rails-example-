@@ -1,0 +1,22 @@
+<% if params[:q].empty? %>
+        <h3>There is not query</h3>
+<% elsif @search.empty? %>
+        <h3>There were no results for your query</h3>
+<% else %>
+        <b> Search results for:  <i><%= params[:q] %></i></b>
+<% @search.each do |search| %> 
+<div  class="articles_list">    	
+  <div id="wrap">
+  <% if search.image=~URI::regexp %>
+    <div id="preview" style="background: url( <%= search.image %> ) 100% 100%; background-size: cover;"></div>
+  <% end %>
+       <h1><%= link_to search.title, feed_article_path(search.feed,search) %></h1>
+    <p><%= strip_tags(search.content) %></p>
+  </div>
+</div>
+     
+      
+<% end %>
+<% end %> 
+
+

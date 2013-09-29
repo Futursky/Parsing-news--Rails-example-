@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<div class="article">
+  
+ <div class="title"> 
+        <h1><%= @feed.name %></h1>
+    </div>
+          
+        <div class="content">
+        <p><%= @feed.content %></p>
+</div>
+        <div class="adress">
+        <p>URl: <a href="<%= @feed.url %>/" target="_blank"><%= @feed.url %></a></p>
+        </div>
+        
+              
+</div>
+
+
+<%= link_to 'Back', feeds_path %>
+<%= link_to 'Articles', feed_articles_path(@feed) %>
+

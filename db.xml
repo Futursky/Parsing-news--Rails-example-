@@ -1,0 +1,29 @@
+<feed>
+   <name>Хабрахабр</name>
+   <url>http://habrahabr.ru/</url>
+   <content>Веб-сайт, який поєднує ознаки соціальної мережі і колективного блогу, створений для публікації новин, аналітичних статей, думок, пов'язаних з інформаційними технологіями, бізнесом та Інтернетом.</content>
+<article>
+   <id>1</id>
+   <title>Article1</title>
+   <img>2003.jpg</img>
+   <content>Talk about a US-Japan war</content>
+</article>
+<article>
+   <id>2</id>
+   <title>Article2</title>
+   <img>2003.jpg</img>
+   <content>Talk about a US-Japan war</content>
+</article>
+<article>
+   <id>3</id>
+   <title>Article3</title>
+   <img>.jpg</img>
+   <content>Talk about a US-Japan war</content>
+</article>
+<article>
+   <id>4</id>
+   <title>Article4</title>
+   <img>.jpg</img>
+   <content>Talk about a US-Japan war</content>
+</article>
+</feed>

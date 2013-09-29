@@ -1,0 +1,10 @@
+
+ <ul class = "breadcrumbs1"> 
+    <li><%= link_to('Home', root_path) %></li>
+	<% if @feed %>
+		<li><%= link_to(@feed.name, feed_articles_path(@feed)) %></li>
+	<% end %>
+	<% if @feed and @article %>
+		<li><%= link_to(@article.title, feed_article_path(@feed, @article)) %></li>
+	<% end %>
+  </ul>

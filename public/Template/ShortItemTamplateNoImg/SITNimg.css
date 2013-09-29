@@ -1,0 +1,24 @@
+h1 {
+margin:0 5px 0 5px;
+white-space: nowrap;
+overflow:hidden;
+text-overflow: ellipsis;
+color: blue;
+}
+
+p{
+margin:0 5px 0 5px;
+font-size:17px;
+}
+
+#wrapper {
+min-width:300px;
+width:100%;
+height:80px;
+overflow:hidden;
+}
+
+a {
+text-decoration:none;
+color:black;	
+}

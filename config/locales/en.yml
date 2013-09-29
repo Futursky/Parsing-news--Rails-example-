@@ -1,0 +1,28 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en: 
+  activerecord:
+    models: 
+      admin: "Admin"
+    attributes:
+      admin:
+        name: "Name"
+        password: ""
+        password_confirmation: ""
+    errors:
+      models:
+        admin:
+          attributes:
+            name:
+                blank: "can't be empty"
+                too_short: "too short"
+            password: 
+                blank: "Password can't be empty"
+                confirmation: "Passwords do not match" 
+                too_short: "Password too short"
+            password_confirmation:
+                blank: "Repeated password can't be empty"
+  recaptcha:
+    errors: 
+      incorrect_captcha_sol: "Fail"

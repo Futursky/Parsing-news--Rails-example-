@@ -1,0 +1,17 @@
+<h1>Записи з бази даних таблиці Feed</h1>
+
+<%= form_tag("save", :method => "post")   do %>
+
+	<textarea rows ="30" cols="125" name="json_content">
+	   	<% for feed in @feeds %>
+	 		<%= 
+	 			feed.as_json(:only=>[:id, :name, :content, :url, :article])
+	 		 %> 
+	 		    <%#= @feed.article[1]["id"]%>
+		<% end %>
+		
+	</textarea>
+
+	<%= submit_tag("Додати") %>
+	
+<% end %>

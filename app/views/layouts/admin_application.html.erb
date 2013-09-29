@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>RiaFresh</title>
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+	  	<%= stylesheet_link_tag    "admin_application", :media => "all" %>
+	  	<%= javascript_include_tag 'jquery','jquery_ujs' %>
+	    <script src="/js/lib/require.js" data-main="/js/adminMain"></script>  
+	  	<%= csrf_meta_tags %>
+	</head>
+	<body >
+		<% if session[:status] %>
+		<div id ="admin_navigate">
+			<%= link_to "Logout", { :controller => :authentications , :action => :logout} %>
+			<%= link_to "Add new admin", { :controller => :authentications , :action => :new} %>
+			<%= link_to "All feeds", { :controller => :feeds , :action => :index} %>
+			<%= link_to "Home", root_url %>
+			<div>Admin <%= session[:name].capitalize %> online</div>
+		</div>
+		<% end %>
+		<div class = "content_box">
+            <%= yield %>
+		</div>
+	</body>
+</html>
+

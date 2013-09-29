@@ -1,0 +1,2 @@
+module LoadArticlesHelper
+end

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<div class="article">
+  
+ <div class="title"> 
+        <h1><%= @article.title %></h1>
+        
+    </div>
+          
+         <div class="a_image" style="float:left;">
+           <img src="<%= @article.image %>"  width="100%" height="auto" ></img>
+             </div>  
+        <div class="content">
+
+        <p><%= strip_tags(@article.content) %></p>
+
+</div>
+        <% if @article.url.present? && @article.url=~URI::regexp %>
+        <div class="adress">
+            <p>Джерело: <a href="<%= @article.url %>/" target="_blank"><%= @article.feed.name %></a></p>
+        </div>
+        <% else%>
+        <div class="adress">
+            <p>Джерело: <a href="<%= @article.feed.url %>/" target="_blank"><%= @article.feed.name %></a></p>
+        </div>
+        <% end %>
+        
+              
+</div>
+
+<%= link_to 'Edit', edit_admin_feed_article_path(@article.feed, @article) %>
+<%= link_to 'Back', admin_feed_articles_path %>
+
+

@@ -1,0 +1,13 @@
+<% @articles.each do |article| %>
+  <div  class="articles_list">
+ 	    <a href="<%= feed_article_path(article.feed, article) %>"> 
+	      <h1><%= article.title %></h1>
+	    </a>  
+
+ 	    <% if article.image=~URI::regexp %>	
+	      <div class="list_img" style="background: url( <%= article.image %> ) 100% 100%;  background-size: cover;"></div>
+	    <% end %>      		  
+	    
+    	<p><%= strip_tags(article.content) %></p>
+    </div>    
+<% end %>

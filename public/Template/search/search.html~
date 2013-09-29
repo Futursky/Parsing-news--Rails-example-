@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>RiaFresh</title>
+		<style>
+			input.search {
+			min-width: 100px;
+			border: none;
+			margin: 0;
+			padding-left: 1px;
+			}
+		</style>
+	</head>
+	<body>
+		<input class = "search" type="text" />
+	</body>
+</html>

@@ -1,0 +1,231 @@
+
+#preview 
+{
+  margin-left:5px;
+  width:80px;
+  height: 80px; 
+  border: none;
+  -ms-behavior: url(backgroundsize.min.htc);
+  float: left;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+  
+#wrap h1
+{
+  margin:0 5px 0 0px;
+  text-align: center;
+  white-space: nowrap;
+  overflow:hidden;
+  text-overflow: ellipsis;
+}
+   
+#wrap p
+{
+  margin:0 5px 0 0px;
+  min-width:300px;
+  font-size:18px;
+  height: 2.4em;
+  overflow: hidden;
+}
+      
+#wrap
+{
+  width:100%;
+  min-width:300px;
+  height:80px;
+  margin-top: 20px;
+}
+h1
+{
+  text-align: center;
+}
+div.field
+{
+  margin-bottom: 10px;
+}
+div.field input
+{  
+  width: 500px;
+}
+div.field label
+{  
+  font-weight: bold;
+  font-size: 1.2em;
+}
+div.field_content textarea
+{
+  width: 496px; 
+  border: inset;
+}
+ div.field_content label
+{
+  font-weight: bold;
+  font-size: 1.2em; 
+}
+
+/*a {text-decoration:none;
+   color:black;}*/
+#admin_navigate 
+{
+  padding-bottom: 10px;
+  text-align: left;
+  font-size: 15px;
+  border-bottom: 1px dashed gray;
+}
+#admin_navigate  a, #admin_navigate   div
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    color: gray;
+    font-size: 15px;
+    display: inline;
+}
+#admin_navigate   div
+{
+  display: block;
+  float: right;
+  color: black;
+}
+#admin_navigate  a:hover
+{
+    color: black;
+    text-decoration: none;
+}
+#add_admin_box
+{
+    width: 350px;
+    height: 180px;
+    text-align: center;
+    padding-top: 180px;
+    margin: 0 auto;
+}
+#add_admin_box table,#add_admin_box  tr, #add_admin_box td
+{
+    text-align: left;
+}
+#add_admin_box label
+{
+    font-size: 17px;
+}
+#add_admin_box #errorExplanation 
+{
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 14px;
+    color: red;
+    border: 2px dashed;
+    
+}
+#add_admin_box #errorExplanation li
+{
+    list-style: decimal;
+    text-align: left;
+    min-width: 270px;
+}
+
+#login_box 
+{
+    text-align: center;
+    width: 270px;
+    height: 180px;
+    padding-top: 200px;
+    margin: 0 auto;
+}
+#login_box table, tr,td
+{
+    text-align: left;
+    vertical-align: bottom;
+}
+#login_box input[type=text],#login_box input[type=password]
+{
+  width: 180px;
+}
+#login_box #recaptcha_lable
+{
+  display: block;
+  margin-top: 10px;
+  color: #0875BF;
+}
+#login_box .error_msg
+{
+    color: #0875BF;
+    font-size: 14px;
+    padding-left: 35px;
+    text-align: center;
+}
+
+#uploadfileplace {
+  display: none;
+  margin: 5px 0 5px 2px;
+  width: 335px;
+}
+.bar {
+    height: 18px;
+    background: gray;
+}
+#progress{
+  border: 1px solid gray;
+}
+form.button_to, form.button_to div
+{
+  display: inline!important;
+}
+
+#recaptcha_logo, #recaptcha_tagline
+{
+  display: none;
+}
+#recaptcha_widget_div #recaptcha_table
+{
+  width: 150px!important;
+}
+#recaptcha_widget_div #recaptcha_image img 
+{
+  width: 200px;
+  height: 50px;
+}
+#recaptcha_widget_div  #recaptcha_table tr 
+{ 
+  width: 270px;
+  display: block;
+}
+#recaptcha_widget_div #recaptcha_image
+{ 
+  width: 200px!important;
+  margin-right: 5px!important; 
+}
+#recaptcha_widget_div #recaptcha_response_field
+{ 
+  width: 200px!important;
+}
+.capsLockOnMsg
+{
+  color: #0875BF;
+  font-size: 14px;
+  text-align: center;
+}
+.recaptchaWrong
+{
+  color: #0875BF;
+  font-size: 14px;
+  text-align: center;
+}
+.ui-dialog-content, .ui-widget-content{
+  font-size: 14px;
+}
+.ui-button.ui-widget{
+     height:20px;
+}
+.ui-button.ui-widget .ui-button-text{
+  font-size: 14px;
+  padding-top: 1px;
+}
+.ui-helper-clearfix{
+  padding: 0;
+  height: 15px;
+}
+.ui-dialog-titlebar-close{
+  display: none;
+}

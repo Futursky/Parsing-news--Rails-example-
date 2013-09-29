@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<div class="article">
+  
+ <div class="title"> 
+        <h1><%= @feed.name %></h1>
+    </div>
+          
+        <div class="content">
+        <pre><%= @feed.content %></pre>
+</div>
+        <div class="adress">
+        <p>URl: <a href="<%= @feed.url %>/" target="_blank"><%= @feed.url %></a></p>
+        </div>
+        
+              
+</div>
+
+<%= link_to 'Edit', edit_admin_feed_path(@feed) %>
+<%= link_to 'Back', admin_feeds_path %>
+<%= link_to 'Articles', admin_feed_articles_path(@feed) %>
+<%#= link_to 'Update', admin_path(@feed) %>

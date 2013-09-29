@@ -1,0 +1,20 @@
+<html> 
+    <head>
+        <title>RIA Fresh</title>        
+        <link type="text/css" rel="stylesheet" href="composite_bc_box.css">
+    </head>
+	
+	<body>
+		<div id="main">
+          		<div class="plase_holder">
+	       			<div class="breadcrumbs">
+					лваопріщшвапріщвшрщвішра зуівгзщішваопрщвчашпр іушагрпщішварпва
+		   		</div>
+	   		</div>
+			<div class="sidebar">
+				<input class = "search" type="text" />
+			</div>
+		</div>
+		<div  class="stop"> </div>	
+	</body>
+</html>	

@@ -1,0 +1,198 @@
+@import "theme_index";
+@include all;
+$green: #4ceb56;
+
+
+@mixin logo {
+
+#main-content_box .menu_box li a {
+  background-color: $green;
+}
+#main-content_box .highlight_menu_item
+{
+	background-color: #4EA956 !important;
+}
+#main-content_box .menu_box li a:hover, #main-content_box .menu_box li a.active{
+    color: #4ABC55; 
+    background-color: #AAFF97;
+}
+
+#main-content_box .articles_list {
+   
+    border-bottom: 1px dashed $green;
+}
+
+#main-content_box .articles_list:last-child {
+  border-bottom: none;
+}
+
+#contentContainer1 > div > div {
+	border-bottom: 1px dashed $green;
+}
+
+#contentContainer1 > div > div:last-child {
+	border-bottom: none;
+}
+
+#banner, .banner_bg, .logo_part{
+	background: url(images/sprites.png) no-repeat;
+}
+
+#banner{
+	background-position: 0 -684.6546325683594px ;
+	width: 896px;
+	height: 120px;
+}
+
+.banner_bg{
+	background-position: 0 -819.8137817382812px ;
+	background-repeat: repeat-x;
+	height: 120px;
+}
+
+.logo_part{
+	background-position: 0 -957.9068908691406px ;
+	width: 80px;
+	height: 80px;
+}
+
+@media screen and (max-width: 640px){
+  #banner{
+    width: 300px;
+  }
+
+  .banner_bg {
+    background-position: 0 -684.65463px;
+  }
+}
+
+#pagination {  
+ 
+  .paginator_p {
+    background-color: $green;        
+    /*1px right and down offset, no blur and offwhite*/
+    /*text-shadow: 1px 1px 0px #5a8332; /* FF3.5+, Opera 9+, Saf1+, Chrome */    
+    /*background-image: url(sprite_g.png) no-repeat 0 0; /*image fallback for none supporting browsers*/
+    /*background-image: -webkit-gradient(linear, left top, left bottom, from(#4a821b), to(#243f0d)); /* Saf4+, Chrome */
+    /*background-image: -webkit-linear-gradient(top, #4a821b, #243f0d); /* Chrome 10+, Saf5.1+ */
+    /*background-image:    -moz-linear-gradient(top, #4a821b, #243f0d); /* FF3.6 */
+    /*background-image:     -ms-linear-gradient(top, #4a821b, #243f0d); /* IE10 */
+    /*background-image:      -o-linear-gradient(top, #4a821b, #243f0d); /* Opera 11.10+ */
+    /*background-image:         linear-gradient(top, #4a821b, #243f0d);*/      
+    /*box shadow - no offset, but a blur of 4px and spread of 1px*/
+    /*plus an additional box-shadow to create the glow*/
+    /*-moz-box-shadow:    0 0 4px 1px #191919, inset 0 1px 0 #7ead42; /* FF3.5+ */
+    /*-webkit-box-shadow:   0 0 4px 1px #191919, inset 0 1px 0 #7ead42; /* Saf3.0+, Chrome */
+    /*box-shadow:       0 0 4px 1px #191919, inset 0 1px 0 #7ead42; /* Opera 10.5, IE9, Chrome 10+ */ 
+  }
+
+  .paginator_p:hover {
+    color: #79797B;
+    background-color: #AAFF97; 
+    /*1px right and down offset, no blur and pale green*/
+    /*text-shadow: 1px 1px 0px #8dc953;*/
+    /*background-image: url(sprite_g.png) no-repeat -120px 0; /*image fallback for none supporting browsers*/
+    /*background-image: -webkit-gradient(linear, left top, left bottom, from(#87d445), to(#589225)); /* Saf4+, Chrome */
+    /*background-image: -webkit-linear-gradient(top, #87d445, #589225); /* Chrome 10+, Saf5.1+ */
+    /*background-image:    -moz-linear-gradient(top, #87d445, #589225); /* FF3.6 */
+    /*background-image:     -ms-linear-gradient(top, #87d445, #589225); /* IE10 */
+    /*background-image:      -o-linear-gradient(top, #87d445, #589225); /* Opera 11.10+ */
+    /*background-image:         linear-gradient(top, #87d445, #589225);
+    /*box shadow - no offset, but a blur of 2px and spread of 1px*/
+    /*plus an additional box-shadow to create the glow - slightly brighter than normal state*/
+    /*-moz-box-shadow:    0 0 4px 1px #191919, inset 0 1px 0 #cff3a2; /* FF3.5+ */
+    /*-webkit-box-shadow:   0 0 4px 1px #191919, inset 0 1px 0 #cff3a2; /* Saf3.0+, Chrome */
+    /*box-shadow:       0 0 4px 1px #191919, inset 0 1px 0 #cff3a2; /* Opera 10.5, IE9, Chrome 10+ */
+  }  
+    
+  .paginator_p.selected,
+  .paginator_p.selected:hover {    
+    background-color: #4EA956 !important; 
+    /*1px right and down offset, no blur and pale green*/
+    /*text-shadow: 1px 1px 0px #8dc953; /* FF3.5+, Opera 9+, Saf1+, Chrome */
+    /*background-image: url(sprite_g.png) no-repeat -80px 0; /*image fallback for none supporting browsers*/
+    /*background-image: -webkit-gradient(linear, left top, left bottom, from(#589225), to(#87D445)); /* Saf4+, Chrome */
+    /*background-image: -webkit-linear-gradient(top, #589225, #87D445); /* Chrome 10+, Saf5.1+ */
+    /*background-image:    -moz-linear-gradient(top, #589225, #87D445); /* FF3.6 */
+    /*background-image:     -ms-linear-gradient(top, #589225, #87D445); /* IE10 */
+    /*background-image:      -o-linear-gradient(top, #589225, #87D445); /* Opera 11.10+ */
+    /*background-image:         linear-gradient(top, #589225, #87D445);
+    /*box shadow - no offset, but a blur of 2px and spread of 1px*/
+    /*plus an additional box-shadow to create the glow - slightly brighter than normal state*/
+    /*-moz-box-shadow:    0 0 2px 1px #191919, inset 0 1px 0 #cff3a2; /* FF3.5+ */
+    /*-webkit-box-shadow:   0 0 2px 1px #191919, inset 0 1px 0 #cff3a2; /* Saf3.0+, Chrome */
+    /*box-shadow:       0 0 2px 1px #191919, inset 0 1px 0 #cff3a2; /* Opera 10.5, IE9, Chrome 10+ */
+  }
+  
+  .paginator_p.selected:hover {      
+      color: #4ABC55;
+    }
+    
+  .paginator_slider .ui-slider-handle {    
+    /*same styling as links*/
+    background-color: $green;
+    /*background-image: url(sprite.png) no-repeat 0 0; /*image fallback for none supporting browsers*/
+    /*background-image: -webkit-gradient(linear, left top, left bottom, from(#4a821b), to(#243f0d)); /* Saf4+, Chrome */
+    /*background-image: -webkit-linear-gradient(top, #4a821b, #243f0d); /* Chrome 10+, Saf5.1+ */
+    /*background-image:    -moz-linear-gradient(top, #4a821b, #243f0d); /* FF3.6 */
+    /*background-image:     -ms-linear-gradient(top, #4a821b, #243f0d); /* IE10 */
+    /*background-image:      -o-linear-gradient(top, #4a821b, #243f0d); /* Opera 11.10+ */
+    /*background-image:         linear-gradient(top, #4a821b, #243f0d);
+    /*box shadow - no offset, but a blur of 4px and spread of 1px*/
+    /*plus an additional box-shadow to create the glow*/
+    /*-moz-box-shadow:    0 0 4px 1px #191919, inset 0 1px 0 #7ead42; /* FF3.5+ */
+    /*-webkit-box-shadow:   0 0 4px 1px #191919, inset 0 1px 0 #7ead42; /* Saf3.0+, Chrome */
+    /*box-shadow:       0 0 4px 1px #191919, inset 0 1px 0 #7ead42; /* Opera 10.5, IE9, Chrome 10+ */ 
+    /*box shadow - no offset, but a blur of 4px and spread of 1px*/
+    /*plus an additional box-shadow to create the glow*/
+    -moz-box-shadow:    0 0 4px 1px #191919, inset 0 1px 0 #4EA956; /* FF3.5+ */
+    -webkit-box-shadow:   0 0 4px 1px #191919, inset 0 1px 0 #4EA956; /* Saf3.0+, Chrome */
+    box-shadow:       0 0 4px 1px #191919, inset 0 1px 0 #4EA956; /* Opera 10.5, IE9, Chrome 10+ */  
+  }  
+  #max_backward {
+    background: url(sprite_g.png) no-repeat 0 -60px;
+  }     
+
+  #over_backward {
+    background: url(sprite_g.png) no-repeat -40px -60px;
+  }     
+
+  #over_forward {
+    background: url(sprite_g.png) no-repeat -80px -60px;
+  }     
+
+  #max_forward {
+    background: url(sprite_g.png) no-repeat -120px -60px;
+  }
+/*hovers*/  
+  #max_backward:hover {   
+    background: url(sprite_g.png) no-repeat 0 -100px; 
+  }
+  
+  #over_backward:hover {    
+    background: url(sprite_g.png) no-repeat -40px -100px; 
+  }
+  
+  #over_forward:hover {   
+    background: url(sprite_g.png) no-repeat -80px -100px; 
+  }
+  
+  #max_forward:hover {    
+    background: url(sprite_g.png) no-repeat -120px -100px;  
+  }     
+  
+/*highlights*/
+  #over_backward:after {    
+    background: url(sprite_g.png) -40px -140px no-repeat;    
+  }
+    
+  #over_forward:after {
+    background: url(sprite_g.png) -80px -140px no-repeat;       
+  } 
+
+}
+
+}
+
+
+@include logo;

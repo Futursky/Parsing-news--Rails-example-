@@ -1,0 +1,33 @@
+#preview {
+    margin-left:5px;
+    width:80px;
+    height: 80px; /* Высота блока */
+    border: none; /* Параметры рамки */
+    background: url(http://img-fotki.yandex.ru/get/6442/193498608.1/0_97ded_d0040478_L.jpg) 100% 100% no-repeat; /* Добавляем фон */
+    background-size: cover; /* Масштабируем фон */
+	-ms-behavior: url(backgroundsize.min.htc);
+  float:left;
+}
+   h1{
+   	margin:0 5px 0 90px;
+   white-space: nowrap;
+   overflow:hidden;
+   text-overflow: ellipsis;}
+   
+   p{
+   	margin:0 5px 0 90px;
+   min-width:300px;
+font-size:18px;}
+   
+   
+   #wrap{
+  min-width:300px;
+   width:100%;
+   min-width:300px;
+   height:80px;
+   overflow:hidden;
+   border-radius:10px;
+   /*border:1px solid red;*/}
+ 
+a {text-decoration:none;
+   color:black;}

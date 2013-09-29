@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>RiaFresh</title>
+		<%= stylesheet_link_tag    @theme, :media => "all" %>
+		<%= javascript_include_tag "application" %>	
+		<%= include_gon %>
+		<%= csrf_meta_tags %>
+	</head>
+	<body >
+		<div id="header_box">
+			<ul class="dropDownThems">  
+			  <li><%= link_to 'LOGIN', admin_feeds_path %></li>   
+			  <li><a href="">COLOR THEME</a>
+			    <ul>
+			    <%= render :template =>"theme/theme" %>
+			    </ul>
+			  </li> 
+			</ul>		
+			<div class = "name_part">
+				<p>RiaFresh</p>
+			</div>
+			<div class = "logo_part">
+			</div>
+		</div>
+		<div class="banner_bg">
+			<div id="banner">
+			</div>	
+		</div>
+		<div id="main">
+          		<div class="plase_holder">
+	       			<div class="breadcrumbs">
+						<%= render :template =>'breadcrumbs' %>	
+		   		    </div>
+	    		</div>
+			<div class="search_box">
+				<div class="search_part">
+          			<%= form_tag(:search, :method => "get", :id => "searchform") do %>
+						<%= text_field_tag(:q, nil, :class => "search") %>
+						<%= submit_tag("", :class => "search-submit") %>
+            		<% end %>
+            	</div>
+
+			</div>
+		</div>
+		<div  class="stop"> </div>
+		<div id = "main-content_box">
+			<div class = "help-content_box">
+				<div id = "contentContainer1" class = 
+					<% if @articles != nil or @article != nil %>
+						<%= "content_box_highlight" %>
+					<% else %>
+						<%= "content_box" %>
+					<% end %>
+					>
+                    <%= yield %>                  
+				</div>
+			</div>
+			<%= render :template =>'menu' %>
+		</div>
+		<div class="stop1"> </div>
+		<div id="footer_box">
+    		<div class="pool">
+        		<div class="mover">
+            		<div class="info">Copyright &copy; <a href="mailto:futurius@gmail.com/">Contact us</a> Version 1.0</div>
+        		</div>
+           		<div class="validators">
+        			<a href="http://validator.w3.org/check?uri=referer" target="_blank">
+           				 <img src="http://www.w3.org/Icons/valid-html401.gif" alt="Valid HTML" height="30" width="88"/>
+        			</a> 
+	   				 <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+    					<img src="http://www.w3.org/Icons/valid-css.gif" alt="Valid CSS" height="30" width="88"/>
+       				 </a>
+       			 </div>
+        	 </div>
+		</div>	
+	</body>
+</html>
+

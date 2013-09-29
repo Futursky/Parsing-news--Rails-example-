@@ -1,0 +1,28 @@
+<div class = "menu_box">
+	<ul id="itemContainer"> 
+	<% 	@feeds_items = Feed.all
+		if @feeds_items
+			for feed_item in @feeds_items do
+				if @feed != nil
+					if @feed.id == feed_item.id  %>
+						<li>
+							<%= link_to feed_item.name, feed_articles_path(feed_item), :class =>"highlight_menu_item" %>
+						</li>  
+					<% else %> 
+					    <li>
+					    	<%= link_to feed_item.name, feed_articles_path(feed_item) %>
+					    </li>   
+					<% end %>
+				<% else %>
+					<li>
+						<%= link_to feed_item.name, feed_articles_path(feed_item) %>
+					</li>
+				<% end %>
+			<% end %>
+        <% else%>
+			<li>
+				<a href="#">Немає жодного фіда</a>
+			</li>   	                		
+	    <% end %>           
+	</ul>	 
+</div>

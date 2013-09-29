@@ -1,0 +1,13 @@
+﻿.borders{
+  behavior:url(css/PIE.htc); /*for IE*/
+  -webkit-border-radius: 10px; 
+		  border-radius: 10px; 
+  border: 1px solid #000;
+  /*position: relative;*/
+}
+.borders-red { border-color: red; }
+.borders-green { border-color: green; }
+.borders-blue { border-color: blue; }
+
+/*Styles for blocks where we show how this "borders" works*/
+div { float: left; margin-right: 10px; width: 150px; height: 150px; }

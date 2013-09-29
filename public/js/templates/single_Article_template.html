@@ -1,0 +1,22 @@
+<div class='article'>
+	<div class="title" > 
+    <h1><%= title %></h1>
+  </div>
+  <% if( image) { %>    
+    <% if( !image.match(/(img.youtube.com)/)) { %>    
+      <div class="a_image">
+        <img src='<%= image %>'  width="100%" height="auto">
+      </div>  
+    <% } %>
+  <% } %>
+  <div class="content">
+    <p>
+      <%= content %>
+    </p>
+  </div>
+  <div class="adress">
+    <p>
+      Source: <a href='<%= url %>' target="_blank"><%= feedName %></a>
+    </p>
+  </div>
+</div>

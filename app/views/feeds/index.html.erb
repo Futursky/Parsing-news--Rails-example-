@@ -1,0 +1,20 @@
+<%= stylesheet_link_tag "feeds" %>
+
+<% @feeds.each do |feed| %>
+  <% last_article = Feed.sortArticle(feed) %>
+  
+  <% if last_article %>
+    <div  class="articles_list">
+    
+      <% if last_article.image=~URI::regexp %>	
+        <div class="list_img" style="background: url( <%= last_article.image %> ) 100% 100%;  background-size: cover;"></div>
+      <% end %>
+    
+      <a href="<%= feed_article_path(last_article.feed, last_article) %>">     		    
+        <h1><%= last_article.title %></h1>
+      </a>   
+    
+      <p><%= strip_tags(last_article.content) %></p>
+    </div>
+  <% end %>   
+<% end %>

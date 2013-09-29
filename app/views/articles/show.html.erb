@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<div class="article">
+  
+  <div class="title" > 
+    <h1><%= @article.title %></h1>
+  </div>
+
+  <% if @article.image =~ URI::regexp && (!@article.feed.name.to_s.include? 'Youtube') %>
+    <div class="a_image">
+      <img src="<%= @article.image %>" width="100%" height="auto"></img>
+    </div>  
+  <% end %>
+  
+  <div class="content">
+    <p><%= raw @article.content %></p>
+  </div>
+  
+  <% if @article.url.present? && @article.url=~URI::regexp %>
+    <div class="adress">
+      <p>Source: <a href="<%= @article.url %>/" target="_blank"><%= @article.feed.name %></a></p>
+    </div>
+  <% else %>
+    <div class="adress">
+      <p>Source: <a href="<%= @article.feed.url %>/" target="_blank"><%= @article.feed.name %></a></p>
+    </div>
+  <% end %>
+  
+</div>
+<%= link_to 'Back', feed_articles_path %>
